@@ -46,9 +46,9 @@
     /******/ /******/ __webpack_require__.d = function (exports, name, getter) {
       /******/ if (!__webpack_require__.o(exports, name)) {
         /******/ Object.defineProperty(exports, name, {
-          enumerable: true,
-          get: getter,
-        });
+      enumerable: true,
+      get: getter,
+    });
         /******/
       }
       /******/
@@ -57,8 +57,8 @@
     /******/ /******/ __webpack_require__.r = function (exports) {
       /******/ if (typeof Symbol !== "undefined" && Symbol.toStringTag) {
         /******/ Object.defineProperty(exports, Symbol.toStringTag, {
-          value: "Module",
-        });
+      value: "Module",
+    });
         /******/
       }
       /******/ Object.defineProperty(exports, "__esModule", { value: true });
@@ -81,9 +81,9 @@
       /******/ var ns = Object.create(null);
       /******/ __webpack_require__.r(ns);
       /******/ Object.defineProperty(ns, "default", {
-        enumerable: true,
-        value: value,
-      });
+          enumerable: true,
+          value: value,
+        });
       /******/ if (mode & 2 && typeof value != "string")
         for (var key in value)
           __webpack_require__.d(
@@ -101,11 +101,11 @@
       /******/ var getter =
         module && module.__esModule
           ? /******/ function getDefault() {
-              return module["default"];
-            }
+            return module["default"];
+          }
           : /******/ function getModuleExports() {
-              return module;
-            };
+            return module;
+          };
       /******/ __webpack_require__.d(getter, "a", getter);
       /******/ return getter;
       /******/
@@ -439,7 +439,7 @@
                 var likeChrome = isCustomContext
                   ? !!nav.likeChrome
                   : /\bChrome\b/.test(ua) &&
-                    !/internal|\n/i.test(toString.toString());
+                  !/internal|\n/i.test(toString.toString());
 
                 /** Internal `[[Class]]` value shortcuts. */
                 var objectClass = "Object",
@@ -782,8 +782,8 @@
                         ) ||
                         RegExp(
                           "\\b" +
-                            pattern +
-                            "(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)",
+                          pattern +
+                          "(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)",
                           "i"
                         ).exec(ua))
                     ) {
@@ -830,7 +830,7 @@
                       result ||
                       (RegExp(
                         pattern +
-                          "(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)",
+                        "(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)",
                         "i"
                       ).exec(ua) || 0)[1] ||
                       null
@@ -1032,8 +1032,8 @@
                       os =
                         os ||
                         data.getProperty("os.name") +
-                          " " +
-                          data.getProperty("os.version");
+                        " " +
+                        data.getProperty("os.version");
                     }
                     if (rhino) {
                       try {
@@ -1262,7 +1262,7 @@
                   else if (
                     version == data[1] ||
                     version ==
-                      (data[2] = (/\bSafari\/([\d.]+\+?)/i.exec(ua) || 0)[1])
+                    (data[2] = (/\bSafari\/([\d.]+\+?)/i.exec(ua) || 0)[1])
                   ) {
                     version = null;
                   }
@@ -1283,81 +1283,81 @@
                     layout && (layout[1] = "like Safari");
                     data =
                       ((data = data[0]),
-                      data < 400
-                        ? 1
-                        : data < 500
-                        ? 2
-                        : data < 526
-                        ? 3
-                        : data < 533
-                        ? 4
-                        : data < 534
-                        ? "4+"
-                        : data < 535
-                        ? 5
-                        : data < 537
-                        ? 6
-                        : data < 538
-                        ? 7
-                        : data < 601
-                        ? 8
-                        : "8");
+                        data < 400
+                          ? 1
+                          : data < 500
+                            ? 2
+                            : data < 526
+                              ? 3
+                              : data < 533
+                                ? 4
+                                : data < 534
+                                  ? "4+"
+                                  : data < 535
+                                    ? 5
+                                    : data < 537
+                                      ? 6
+                                      : data < 538
+                                        ? 7
+                                        : data < 601
+                                          ? 8
+                                          : "8");
                   } else {
                     layout && (layout[1] = "like Chrome");
                     data =
                       data[1] ||
                       ((data = data[0]),
-                      data < 530
-                        ? 1
-                        : data < 532
-                        ? 2
-                        : data < 532.05
-                        ? 3
-                        : data < 533
-                        ? 4
-                        : data < 534.03
-                        ? 5
-                        : data < 534.07
-                        ? 6
-                        : data < 534.1
-                        ? 7
-                        : data < 534.13
-                        ? 8
-                        : data < 534.16
-                        ? 9
-                        : data < 534.24
-                        ? 10
-                        : data < 534.3
-                        ? 11
-                        : data < 535.01
-                        ? 12
-                        : data < 535.02
-                        ? "13+"
-                        : data < 535.07
-                        ? 15
-                        : data < 535.11
-                        ? 16
-                        : data < 535.19
-                        ? 17
-                        : data < 536.05
-                        ? 18
-                        : data < 536.1
-                        ? 19
-                        : data < 537.01
-                        ? 20
-                        : data < 537.11
-                        ? "21+"
-                        : data < 537.13
-                        ? 23
-                        : data < 537.18
-                        ? 24
-                        : data < 537.24
-                        ? 25
-                        : data < 537.36
-                        ? 26
-                        : layout != "Blink"
-                        ? "27"
-                        : "28");
+                        data < 530
+                          ? 1
+                          : data < 532
+                            ? 2
+                            : data < 532.05
+                              ? 3
+                              : data < 533
+                                ? 4
+                                : data < 534.03
+                                  ? 5
+                                  : data < 534.07
+                                    ? 6
+                                    : data < 534.1
+                                      ? 7
+                                      : data < 534.13
+                                        ? 8
+                                        : data < 534.16
+                                          ? 9
+                                          : data < 534.24
+                                            ? 10
+                                            : data < 534.3
+                                              ? 11
+                                              : data < 535.01
+                                                ? 12
+                                                : data < 535.02
+                                                  ? "13+"
+                                                  : data < 535.07
+                                                    ? 15
+                                                    : data < 535.11
+                                                      ? 16
+                                                      : data < 535.19
+                                                        ? 17
+                                                        : data < 536.05
+                                                          ? 18
+                                                          : data < 536.1
+                                                            ? 19
+                                                            : data < 537.01
+                                                              ? 20
+                                                              : data < 537.11
+                                                                ? "21+"
+                                                                : data < 537.13
+                                                                  ? 23
+                                                                  : data < 537.18
+                                                                    ? 24
+                                                                    : data < 537.24
+                                                                      ? 25
+                                                                      : data < 537.36
+                                                                        ? 26
+                                                                        : layout != "Blink"
+                                                                          ? "27"
+                                                                          : "28");
                   }
                   // Add the postfix of ".x" or "+" for approximate versions.
                   layout &&
@@ -1367,8 +1367,8 @@
                         typeof data == "number"
                           ? ".x"
                           : /[.+]/.test(data)
-                          ? ""
-                          : "+"));
+                            ? ""
+                            : "+"));
                   // Obscure version for some Safari 1-2 releases.
                   if (
                     name == "Safari" &&
@@ -1683,7 +1683,7 @@
                 !((__WEBPACK_AMD_DEFINE_RESULT__ = function () {
                   return platform;
                 }.call(exports, __webpack_require__, exports, module)),
-                __WEBPACK_AMD_DEFINE_RESULT__ !== undefined &&
+                  __WEBPACK_AMD_DEFINE_RESULT__ !== undefined &&
                   (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
               }
               // Check for `exports` after `define` in case a build optimizer adds an `exports` object.
@@ -1743,7 +1743,7 @@
         /***/ function (module, exports) {
           module.exports = function (module) {
             if (!module.webpackPolyfill) {
-              module.deprecate = function () {};
+              module.deprecate = function () { };
               module.paths = [];
               // module.parent = undefined by default
               if (!module.children) module.children = [];
@@ -2133,22 +2133,23 @@
                     key: "update",
                     value: function update() {
                       var values = this.getValues();
-                      this.element.style.transform = "perspective("
-                        .concat(
-                          this.settings.perspective,
-                          "px)\n      rotateX("
-                        )
-                        .concat("      rotateY(")
-                        .concat(
-                          this.settings.disabled &&
-                            this.settings.disabled.toUpperCase() === "Y"
-                            ? 0
-                            : values.tiltX,
-                          "deg)\n      scale3d("
-                        )
-                        .concat(this.settings.scale, ", ")
-                        .concat(this.settings.scale, ", ")
-                        .concat(this.settings.scale, ")");
+                      if (window.innerWidth < 460)
+                        this.element.style.transform = "perspective("
+                          .concat(
+                            this.settings.perspective,
+                            "px)\n"
+                          )
+                          .concat("      rotateY(")
+                          .concat(
+                            this.settings.disabled &&
+                              this.settings.disabled.toUpperCase() === "Y"
+                              ? 0
+                              : values.tiltX,
+                            "deg)\n      scale3d("
+                          )
+                          .concat(this.settings.scale, ", ")
+                          .concat(this.settings.scale, ", ")
+                          .concat(this.settings.scale, ")");
 
                       if (this.settings.shine) {
                         Object.assign(this.shineElement.style, {
