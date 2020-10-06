@@ -2133,22 +2133,23 @@
                     key: "update",
                     value: function update() {
                       var values = this.getValues();
-                      this.element.style.transform = "perspective("
-                        .concat(
-                          this.settings.perspective,
-                          "px)\n"
-                        )
-                        .concat("      rotateY(")
-                        .concat(
-                          this.settings.disabled &&
-                            this.settings.disabled.toUpperCase() === "Y"
-                            ? 0
-                            : values.tiltX,
-                          "deg)\n      scale3d("
-                        )
-                        .concat(this.settings.scale, ", ")
-                        .concat(this.settings.scale, ", ")
-                        .concat(this.settings.scale, ")");
+                      if (window.innerWidth < 460)
+                        this.element.style.transform = "perspective("
+                          .concat(
+                            this.settings.perspective,
+                            "px)\n"
+                          )
+                          .concat("      rotateY(")
+                          .concat(
+                            this.settings.disabled &&
+                              this.settings.disabled.toUpperCase() === "Y"
+                              ? 0
+                              : values.tiltX,
+                            "deg)\n      scale3d("
+                          )
+                          .concat(this.settings.scale, ", ")
+                          .concat(this.settings.scale, ", ")
+                          .concat(this.settings.scale, ")");
 
                       if (this.settings.shine) {
                         Object.assign(this.shineElement.style, {
